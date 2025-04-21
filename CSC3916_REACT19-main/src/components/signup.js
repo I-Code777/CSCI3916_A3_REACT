@@ -8,7 +8,7 @@ function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const response = await fetch('http://localhost:8080/signup', {
+    const response = await fetch('https://csci3916-a5.onrender.com/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, username, password }),
